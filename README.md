@@ -8,18 +8,19 @@
 
 <p align="center">
   <a href="./nivel_01">
-    <img src="./.github/card_01.jpg" width="220px">
+    <img src="./.github/card_01.jpg" width="350px">
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;
   <a href="#">
-    <img src="./.github/card_02.jpg" width="220px">
+    <img src="./.github/card_02.jpg" width="350px">
   </a>
-  &nbsp;&nbsp;&nbsp;
+  </br>
+  </br>
   <a href="#">
-    <img src="./.github/card_03.jpg" width="220px">
+    <img src="./.github/card_03.jpg" width="350px">
   </a>
-  &nbsp;&nbsp;&nbsp;
+  &nbsp;&nbsp;
   <a href="#">
-    <img src="./.github/card_04.jpg" width="220px">
+    <img src="./.github/card_04.jpg" width="350px">
   </a>
 </p>
