@@ -1,10 +1,35 @@
 const express = require('express')
-const { uuid } = require('uuidv4')
+const { uuid, isUuid } = require('uuidv4')
 
 const app = express()
 app.use(express.json())
 
 const projects = []
+
+function logRequest( request, response, next ) {
+  
+  const { method, url } = request
+  const logLabel = `[${method.toUpperCase()}] ${url}`
+  console.log(logLabel)
+
+  return next() 
+
+}
+
+function validateProjectId( request, response, next ) {
+  
+  const { id } = request.params
+  
+  if(!isUuid(id)) {
+    return response.status(400).json( {message: "Invalid project ID"} )
+  }
+
+  return next()
+
+}
+
+app.use(logRequest)
+app.use('/projects/:id', validateProjectId)
 
 app.get('/projects', (request, response) => {
 
@@ -12,7 +37,7 @@ app.get('/projects', (request, response) => {
 
   const results = title 
   ? projects.filter(project => project.title.includes(title))
-  : projects //função ternária
+  : projects 
 
   return response.json(results)
   
