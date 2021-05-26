@@ -1,4 +1,4 @@
-<a href="https://www.notion.so/GoStack-a3819955ddb546089020745c180ae945">
+<a href="./GoStack">
   <img alt="GoStack" src="./.github/logo.jpg"/>
 </a>
 <a href="./nivel_01">
