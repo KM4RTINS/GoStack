@@ -1,4 +1,4 @@
-<a href="./GoStack">
+<a href="#">
   <img alt="GoStack" src="./.github/logo.jpg"/>
 </a>
 <a href="./nivel_01">
