@@ -1,5 +1,5 @@
 <a href="#">
-  <img alt="GoStack" src="./.github/logo.jpg"/>
+  <img alt="GoStack" src="../.github/logo.jpg"/>
 </a>
 
 ### **NÍVEL 02**
